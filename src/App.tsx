@@ -28,8 +28,8 @@ const App: React.FC = () => {
 
                     {/* Protected routes */}
 
-                 <Route path="/create" element={CreatePage} />} />
-                <Route path="/patients" element={PatientsPage} />} />
+                 <Route path="/create" element={< CreatePage />} />
+                <Route path="/patients" element={ < PatientsPage />} />
                 
                 </Routes>
             </div>
@@ -38,6 +38,7 @@ const App: React.FC = () => {
 }
 
 export default App;
+
 
 
 
