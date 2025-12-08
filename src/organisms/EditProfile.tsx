@@ -26,7 +26,7 @@ function EditProfile() {
             try {
                 const userId = localStorage.getItem("userId");
                 if (userId) {
-                    const response = await axios.patch(`http://localhost:5050/record/user/update/${userId}`, {
+                    const response = await axios.patch(`https://backrecord.onrender.com/record/user/update/${userId}`, {
                         email: email,
                         username: name,
                         doctor: isDoctor
@@ -109,5 +109,6 @@ function EditProfile() {
         </div>
     )
 }
+
 
 export default EditProfile;
