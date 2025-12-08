@@ -20,6 +20,7 @@ const App: React.FC = () => {
                 <Routes>
                     <Route path="/" element={<LoadingPage />} />
                     <Route path="/login" element={<LoginPage />} />
+                    <Route path="/home" element={<HomePage />} />
                     <Route path="/signup" element={<SignupPage />} />
                     <Route path="*" element={<NotFound />} />
 
@@ -34,6 +35,7 @@ const App: React.FC = () => {
 }
 
 export default App;
+
 
 
 
