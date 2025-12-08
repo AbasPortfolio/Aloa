@@ -50,7 +50,7 @@ export interface Patient {
     pathology: string[];
     patient_triage: string;
     notes?: string;
-    uniqueId?: string; // Optional unique ID for patients
+    uniqueId: string; // Optional unique ID for patients
 }
 
 export interface Appointments {
@@ -74,6 +74,7 @@ export const getTriageType = (triage: string) => {
     }
 
 }
+
 
 
 
