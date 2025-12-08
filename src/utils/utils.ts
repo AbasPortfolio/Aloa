@@ -45,7 +45,8 @@ export interface Patient {
     patient_age: number;
     file_number: number;
     diagnosis: string;
-    doctor: string;
+    doctor: boolean;
+    date_recorded: number;
     pathology: string[];
     date_recorded: Date;
     patient_triage: string;
@@ -72,4 +73,5 @@ export const getTriageType = (triage: string) => {
         default:
             return "Credit";
     }
+
 }
