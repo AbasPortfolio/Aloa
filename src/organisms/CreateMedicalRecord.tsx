@@ -62,6 +62,7 @@ function CreateMedicalRecord() {
                     const elt : Patient = {
                         patient_name: name,
                         doctor: false,
+                        file_number: parseInt(status),
                         date_recorded: Date.now(),
                         patient_age: parseInt(age),
                         patient_gender: gender === GenderType.Male,
@@ -190,3 +191,4 @@ function CreateMedicalRecord() {
 }
 
 export default CreateMedicalRecord;
+
