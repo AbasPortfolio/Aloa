@@ -8,7 +8,7 @@ import LoadingPage from './pages/LoadingPage';
 import NotFound from './pages/NotFound';
 
 
-import EditProfile from "./organisms/EditProfile";
+
 
 import { UserProvider } from './context/UserContext'; // Import UserProvider
 
@@ -35,4 +35,5 @@ const App: React.FC = () => {
 }
 
 export default App;
+
 
