@@ -69,6 +69,7 @@ function CreateMedicalRecord() {
                         diagnosis: diagnostic,
                         pathology: pathology.split(',').map(item => item.trim()),
                         patient_triage: status,
+                        uniqueId: status,
                         notes: notes,// Add a unique ID to the new patient
                     };
 
@@ -191,4 +192,5 @@ function CreateMedicalRecord() {
 }
 
 export default CreateMedicalRecord;
+
 
