@@ -16,7 +16,7 @@ function PatientsPage() {
     document.body.style.backgroundColor = dark ? "#131619" : "#e3eed4";
 
     // Navigate to patient details page
-    const handleGoToPatient = (id: string) => {
+    const handleGoToPatient = (id: number) => {
         navigate(`/patients/${id}`);
     }
 
@@ -77,5 +77,6 @@ function PatientsPage() {
         </div>
     )
 }
+
 
 export default PatientsPage;
