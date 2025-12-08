@@ -24,8 +24,7 @@ const App: React.FC = () => {
                     <Route path="*" element={<NotFound />} />
 
                     {/* Protected routes */}
-                    
-                    <Route path="/home" element={<ProtectedRoute element={HomePage} />} />
+
 
                 
                 </Routes>
@@ -35,5 +34,6 @@ const App: React.FC = () => {
 }
 
 export default App;
+
 
 
