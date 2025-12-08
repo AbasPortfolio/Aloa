@@ -51,7 +51,7 @@ export interface Patient {
     date_recorded: Date;
     patient_triage: string;
     notes?: string;
-    uniqueId?: number; // Optional unique ID for patients
+    uniqueId: number; // Optional unique ID for patients
 }
 
 export interface Appointments {
@@ -75,3 +75,4 @@ export const getTriageType = (triage: string) => {
     }
 
 }
+
