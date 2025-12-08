@@ -4,6 +4,8 @@ import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import LoadingPage from './pages/LoadingPage';
+import CreatePage from './pages/CreatePage';
+import PatientsPage from './pages/PatientsPage';
 
 import NotFound from './pages/NotFound';
 
@@ -26,7 +28,8 @@ const App: React.FC = () => {
 
                     {/* Protected routes */}
 
-
+                 <Route path="/create" element={<ProtectedRoute element={CreatePage} />} />
+                <Route path="/patients" element={<ProtectedRoute element={PatientsPage} />} />
                 
                 </Routes>
             </div>
@@ -35,6 +38,7 @@ const App: React.FC = () => {
 }
 
 export default App;
+
 
 
 
