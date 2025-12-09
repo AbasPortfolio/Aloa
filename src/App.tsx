@@ -13,7 +13,7 @@ import NotFound from './pages/NotFound';
 
 import EditProfile from "./organisms/EditProfile";
 import UserItemPage from './organisms/UserItemPage';
-import ProtectedRoute from "./pages/ProtectedRoute";
+
 import { UserProvider } from './context/UserContext'; // Import UserProvider
 
 const App: React.FC = () => {
@@ -44,6 +44,7 @@ const App: React.FC = () => {
 }
 
 export default App;
+
 
 
 
