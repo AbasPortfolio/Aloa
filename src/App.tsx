@@ -33,10 +33,10 @@ const App: React.FC = () => {
                     <Route path="/settings"  element={<SettingsPage} />} />
                     <Route path="/edit" element={<EditProfile} />} />
                     <Route path="/create" element={<CreatePage} />} />
-                    <Route path="/patients" element={<PatientsPage} />} />
+                    <Route path="/patients" element={<PatientsPage/>}  />
 
-                    <Route path="/patients/:id" element={<UserItemPage} />} />
-                    <Route path="/profile/editProfile"  element={<EditProfile} />} />
+                    <Route path="/patients/:id" element={<UserItemPage />} />
+                    <Route path="/profile/editProfile"  element={<EditProfile />} />
                 </Routes>
             </div>
         </UserProvider>
@@ -44,5 +44,6 @@ const App: React.FC = () => {
 }
 
 export default App;
+
 
 
