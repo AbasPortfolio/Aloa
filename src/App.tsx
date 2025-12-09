@@ -7,7 +7,7 @@ import LoadingPage from './pages/LoadingPage';
 import UserItemPage from './organisms/UserItemPage';
 import CreatePage from './pages/CreatePage';
 import PatientsPage from './pages/PatientsPage';
-import ProtectedRoute from "./pages/ProtectedRoute";
+
 
 import NotFound from './pages/NotFound';
 
@@ -30,9 +30,9 @@ const App: React.FC = () => {
 
                     {/* Protected routes */}
 
-                    <Route path="/create" element={<ProtectedRoute element={CreatePage} />} />
-                    <Route path="/patients" element={<ProtectedRoute element={PatientsPage} />} />
-                    <Route path="/patients/:id" element={<ProtectedRoute element={UserItemPage} />} />
+                    <Route path="/create" element={<CreatePage />} />
+                    <Route path="/patients" element={<PatientsPage />} />
+                    <Route path="/patients/:id" element={<UserItemPage />} />
                 
                 </Routes>
             </div>
@@ -41,6 +41,7 @@ const App: React.FC = () => {
 }
 
 export default App;
+
 
 
 
