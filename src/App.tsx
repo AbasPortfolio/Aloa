@@ -29,10 +29,10 @@ const App: React.FC = () => {
 
                     {/* Protected routes */}
                     
-                    <Route path="/home" element={<HomePage} />} />
-                    <Route path="/settings"  element={<SettingsPage} />} />
-                    <Route path="/edit" element={<EditProfile} />} />
-                    <Route path="/create" element={<CreatePage} />} />
+                    <Route path="/home" element={<HomePage />} />
+                    <Route path="/settings"  element={<SettingsPage />} />
+                    <Route path="/edit" element={<EditProfile/>} />
+                    <Route path="/create" element={<CreatePage />} />
                     <Route path="/patients" element={<PatientsPage/>}  />
 
                     <Route path="/patients/:id" element={<UserItemPage />} />
@@ -44,6 +44,7 @@ const App: React.FC = () => {
 }
 
 export default App;
+
 
 
 
